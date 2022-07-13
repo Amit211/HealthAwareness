@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    tools:context=".Activity.DashBoard"
+    tools:ignore="HardcodedText">
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/village"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edit_textbox"
+                android:orientation="vertical"
+                >
+
+                <Spinner
+                    android:id="@+id/spn_village"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp" />
+            </LinearLayout>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_household"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edit_textbox"
+            android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Household Survey"
+                    android:textColor="#FAF9F9"
+                    android:textSize="20sp"
+                    android:background="@drawable/shape"
+                    android:backgroundTint="@color/appcolor"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+            <TextView
+                android:id="@+id/household_survey"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:text="235"
+                android:layout_weight="1"
+                android:textColor="#0E0E0E"
+                android:textSize="25sp"
+                android:backgroundTint="#FBFBFB"
+                android:textStyle="bold"
+                android:gravity="center_vertical|right"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+                <ImageView
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:layout_gravity="center"
+                    android:paddingLeft="10dp"
+                    android:src="@drawable/house_raz"
+                    android:layout_marginLeft="45dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_textbox"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Suspected Household"
+                    android:textColor="#FBF7F7"
+                    android:textSize="20sp"
+                    android:background="@drawable/shape"
+                    android:backgroundTint="@color/appcolor"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <LinearLayout
+                    android:id="@+id/ll_suspected_household"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:text="235"
+                        android:layout_weight="1"
+                        android:textColor="#0E0E0E"
+                        android:textSize="25sp"
+                        android:backgroundTint="#FBFBFB"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical|right"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <ImageView
+                        android:layout_width="79dp"
+                        android:layout_height="79dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/heart"
+                        android:layout_marginLeft="45dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edit_textbox"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Synchronize(0)"
+                        android:textColor="#FBF7F7"
+                        android:textSize="20sp"
+                        android:background="@drawable/shape"
+                        android:backgroundTint="@color/appcolor"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <LinearLayout
+                        android:id="@+id/synch_household"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="100dp"
+                            android:text="235"
+                            android:layout_weight="1"
+                            android:textColor="#0E0E0E"
+                            android:textSize="25sp"
+                            android:backgroundTint="#FBFBFB"
+                            android:textStyle="bold"
+                            android:gravity="center_vertical|right"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                        <ImageView
+                            android:layout_width="79dp"
+                            android:layout_height="79dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/syn"
+                            android:layout_marginLeft="45dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+       <!-- <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addStakeholderSurvey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="end"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="@color/appcolor"
+            android:src="@drawable/ic_baseline_add_24"
+            tools:ignore="RtlCompat" />  -->
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>
